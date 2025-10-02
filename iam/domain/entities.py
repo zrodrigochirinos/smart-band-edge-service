@@ -5,7 +5,7 @@ class Device:
     Attributes:
     - device_id (str): Unique identifier for the device.
     - api_key (str): API key associated with the device.
-    - created_at (): Timestamp when the device was created.
+    - created_at (datetime): Timestamp when the device was created.
     """
     def __init__(self, device_id: str, api_key:str, created_at):
         self.device_id = device_id
