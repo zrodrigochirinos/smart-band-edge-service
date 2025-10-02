@@ -34,7 +34,7 @@ class AuthApplicationService:
         """
         return self.device_repository.get_or_create_test_device()
 
-    def get_device_by_id_amd_api_key(self, device_id: str, api_key: str) -> Optional[Device]:
+    def get_device_by_id_and_api_key(self, device_id: str, api_key: str) -> Optional[Device]:
         """
         Retrieve a device by its ID and API key.
         :param device_id: The ID of the device.
