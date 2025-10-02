@@ -12,6 +12,9 @@ def init_db()->None:
 
     """
     db.connect()
+    from iam.infrastructure.models import Device
+    from health.infrastructure.models import HealthRecord
+    db.create_tables([Device, HealthRecord], safe=True)
     """TODO: Import Models and create tables"""
     db.close()
 
